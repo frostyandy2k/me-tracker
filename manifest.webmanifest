@@ -1,0 +1,14 @@
+{
+  "name": "MeTracker",
+  "short_name": "MeTracker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "aliceblue",
+  "theme_color": "aliceblue",
+  "description": "Track your daily activities.",
+  "icons": [{
+    "src": "images/touch/custom_icon.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }]
+}

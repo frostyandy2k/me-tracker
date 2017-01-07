@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Use the AppCache for offline mode -->
+<html manifest="metracker.appcache">
+
+<head>
+    <title>MeTracker by Andy</title>
+    <!-- disable double click zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    <!-- Apple Web App Settings -->
+    <link rel="apple-touch-icon" href="/images/custom_icon.png">
+    <link rel="apple-touch-startup-image" href="/launch.png">
+    <meta name="apple-mobile-web-app-title" content="MeTracker">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- https://developer.apple.com/ios/human-interface-guidelines/ -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
+    <!-- Apple Web App Settings END-->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfill -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/@angular/core/bundles/core.umd.js"></script>
+    <script src="node_modules/@angular/common/bundles/common.umd.js"></script>
+    <script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+    <!-- 2. Load our 'modules' -->
+    <script src='app/app.component.js'></script>
+    <script src='app/app.module.js'></script>
+    <script src='app/main.js'></script>
+</head>
+<!-- 3. Display the application -->
+
+<body>
+    <menu-bar>
+        <logo-bar>Loading...</logo-bar>
+        <menu-button class="fa fa-navicon"></menu-button>
+    </menu-bar>
+    <status-bar>
+        <pomodoro><img src="/images/pomodoro.png"></pomodoro>
+        <date>Current Date</date>
+        <undo-button class="fa fa-undo"></undo-button>
+    </status-bar>
+    <hr>
+    <br><br><br><br><br>
+    <content>
+    <!-- <track-button (click)="clicked()"><badge>{{count}}</badge><icon class="fa fa-smile-o"></track-button> -->
+        <track-button><icon class="fa fa-smile-o"/></track-button>
+        <track-button><icon class="fa fa-gitlab"/></track-button>
+        <track-button><icon class="fa fa-github"/></track-button>
+        <track-button><icon class="fa fa-times-rectangle-o"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button><icon class="fa fa-users"/></track-button>
+        <track-button></track-button>
+    </content>
+</body>
+
+</html>
